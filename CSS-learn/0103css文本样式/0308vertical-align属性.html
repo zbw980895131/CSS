@@ -1,0 +1,54 @@
+<html>
+<head>
+    <style>
+        td.top {
+           vertical-align: top;
+        }
+        td.middle {
+           vertical-align: middle;
+        }
+        td.bottom {
+           vertical-align: bottom;
+        }
+        span.baseline {
+            vertical-align: baseline;
+        }
+        span.sub {
+            vertical-align: sub;
+        }
+        span.super {
+            vertical-align: super;
+        }
+        span.pixel {
+            vertical-align: -10px;
+        }
+        .main {
+            height: 150px; width: 400px;
+            background-color: LightSkyBlue;
+            display: inline-table;
+        }
+        .paragraph {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" cellpadding="2" cellspacing="0" style="height: 150px;">
+        <tr>
+            <td class="top">Top</td>
+            <td class="middle">Middle</td>
+            <td class="bottom">Bottom</td>
+        </tr>
+    </table>
+    <p>This is a <span class="baseline">w3cschool</span> example.</p>
+    <p>This is a <span class="sub">w3cschool</span> example.</p>
+    <p>This is a <span class="super">w3cschool</span> example.</p>
+    <p>This is a <span class="pixel">w3cschool</span> example.</p>
+    <div class="main">
+        <div class="paragraph">
+            w3cschool
+        </div>
+    </div>
+</body>
+</html>

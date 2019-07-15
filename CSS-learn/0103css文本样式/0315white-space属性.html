@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <style>
+        p.nowrap {
+           white-space: nowrap;
+        }
+        p.pre {
+           white-space: pre;
+        }
+        p.preline {
+           white-space: pre-line;
+        }
+        p.prewrap {
+           white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <p class="nowrap">
+        This paragraph has         multiple spaces      and
+        a line break, but it will be ignored, as we used the nowrap value. 
+    </p>
+    <p class="pre">
+        文本支持所有的换行和空格
+        In the markup we have multiple            spaces 
+        and a line break. 
+    </p>
+    <p class="preline"> 
+        文本支持换行，忽略额外的空格
+        In the markup we have multiple            spaces 
+        and a line break, but in the result multiple spaces are ignored. 
+    </p>
+    <p class="prewrap"> 
+        文本将在必要的时候或者行的结尾进行换行
+        In the markup we have              multiple 
+        spaces and a line break.
+    </p>
+</body>
+</html>
